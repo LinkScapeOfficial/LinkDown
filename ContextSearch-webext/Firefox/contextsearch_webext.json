@@ -1,0 +1,9 @@
+{
+    "name": "contextsearch_webext",
+    "description": "Launches external application",
+    "type": "stdio",
+    "allowed_extensions": [
+        "{5dd73bb9-e728-4d1e-990b-c77d8e03670f}"
+    ],
+    "path": "..\\ContextSearch.bat"
+}
