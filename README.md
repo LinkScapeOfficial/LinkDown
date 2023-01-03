@@ -61,7 +61,7 @@ https://github.com/LinkScapeFoudation/LinkDown/releases/latest
 
 在下载页面右键，然后按照图片内容操作：
 
-![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial4.png?raw=true)
+![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutotial4.png?raw=true)
 
 最后成品如下：
 
