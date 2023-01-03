@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/LinkScapeFoudation/LinkDown/blob/main/origin.png?raw=true" width = "256" height = "256">
+<img src="https://github.com/LinkScapeFoudation/LinkDown/blob/main/oringin.png?raw=true" width = "256" height = "256">
 <h1 align="center">LinkDown</h1>
 <p align="center">
 <i>A Video Downloader. Easier than easy.</i>
