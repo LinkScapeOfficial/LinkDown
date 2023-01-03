@@ -1,8 +1,9 @@
 <p align="center">
-<img src="https://github.com/LinkScapeFoudation/LinkDown/blob/master/img/origin.png?raw=true" width = "256" height = "256">
+<img src="https://github.com/LinkScapeFoudation/LinkDown/blob/master/origin.png?raw=true" width = "256" height = "256">
 <h1 align="center">LinkDown</h1>
-<center>*A Video Downloader. Easier than easy.*</center>
-
+<p align="center">
+*A Video Downloader. Easier than easy.*
+<p>
 <p align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg">
 <p>
