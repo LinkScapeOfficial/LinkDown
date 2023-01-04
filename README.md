@@ -39,15 +39,13 @@ https://github.com/LinkScapeFoudation/LinkDown/releases/latest
 
 安装扩展 **ContextSearch web-ext**。地址：[Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/contextsearch-web-ext)、[Chrome](https://chrome.google.com/webstore/detail/ddippghibegbgpjcaaijbacfhjjeafjh)、[代理下载](https://www.crxsoso.com/webstore/detail/ddippghibegbgpjcaaijbacfhjjeafjh)
 
-![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial1.jpg?raw=true)
-
 ### 二、导入扩展配置
 
 打开扩展 ContextSearch web-ext 的**设置页面**，导入配置 **ContextSearchOptions.json**。(注意选择版本)
 
 配置下载：[Firefox 版本](https://fastly.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/ContextSearchOptions_Firefox.json)、[Chrome 版本](https://fastly.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/ContextSearchOptions_Chrome.json)、[本地一键下载](https://www.lanzouh.com/b07nx1b4f)
 
-![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial2.jpg?raw=true)
+![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial1.jpg?raw=true)
 
 ### 三、开启权限
 
@@ -57,13 +55,13 @@ https://github.com/LinkScapeFoudation/LinkDown/releases/latest
 
 注意要**完全关闭**才算是重启，如果浏览器在后台还在运行的话，就不能算是重启。
 
-![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial3.jpg?raw=true)
+![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial2.jpg?raw=true)
 
 ### 四、使用
 
 在下载页面右键，然后按照图片内容操作：
 
-![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial4.png?raw=true)
+![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutotial4.png?raw=true)
 
 最后成品如下：
 
