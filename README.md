@@ -66,3 +66,9 @@ https://github.com/LinkScapeFoudation/LinkDown/releases/latest
 最后成品如下：
 
 ![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial5.gif?raw=true)
+
+------
+  
+## 引用
+  
+本项目引用了大量软件，链接在 [REFERENCE.md](https://github.com/LinkScapeFoudation/LinkDown/blob/main/REFERENCE.md)
