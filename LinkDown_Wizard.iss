@@ -2,8 +2,8 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LinkDown"
-#define MyAppVersion "0.1"
-#define MyAppPublisher "LinkScape"
+#define MyAppVersion "0.1.1"
+#define MyAppPublisher "LinkScape Foundation"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -55,6 +55,3 @@ Source: "ContextSearch-webext\*"; DestDir: "{userappdata}\ContextSearch-webext";
 [Registry]
 Root: HKCR; Subkey: "Software\Mozilla\NativeMessagingHosts\contextsearch_webext"; ValueType: String; ValueData: "{userappdata}\ContextSearch-webext\Firefox\contextsearch_webext.json"; MinVersion: 0.0,6.0;
 Root: HKCR; Subkey: "Software\Google\Chrome\NativeMessagingHosts\contextsearch_webext"; ValueType: String; ValueData: "{userappdata}\ContextSearch-webext\Chrome\contextsearch_webext.json"; MinVersion: 0.0,6.0;
-Root: HKCR; Subkey: "Software\Google\Chrome\NativeMessagingHosts\contextsearch_webext"; ValueType: String; ValueData: "{userappdata}\ContextSearch-webext\Chromium\contextsearch_webext.json"; MinVersion: 0.0,6.0;
-Root: HKCR; Subkey: "Software\Microsoft\Edge\NativeMessagingHosts\contextsearch_webext"; ValueType: String; ValueData: "{userappdata}\ContextSearch-webext\Edge\contextsearch_webext.json"; MinVersion: 0.0,6.0;
-Root: HKCR; Subkey: "Software\Google\Chrome\NativeMessagingHosts\contextsearch_webext"; ValueType: String; ValueData: "{userappdata}\ContextSearch-webext\Vivaldi\contextsearch_webext.json"; MinVersion: 0.0,6.0;
