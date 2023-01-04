@@ -27,3 +27,7 @@ Inno Setup: https://jrsoftware.org/isinfo.php/
 modpath.iss: http://www.legroom.net/software/
 
 Inno-Setup-Chinese-Simplified-Translation: https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation/
+
+## ContextSearch-Native-App
+
+https://github.com/ssborbis/ContextSearch-Native-App/
