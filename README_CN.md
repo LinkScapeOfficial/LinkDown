@@ -14,6 +14,13 @@
 
 [English](https://github.com/LinkScapeFoundation/LinkDown/blob/main/README.md) | 简体中文
 
+## 捐款
+
+https://bank.hackclub.com/donations/start/linkscape
+
+<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">
+
+
 ## 下载链接
 
 https://github.com/LinkScapeFoudation/LinkDown/releases/latest
@@ -22,7 +29,7 @@ https://github.com/LinkScapeFoudation/LinkDown/releases/latest
 
 软件开发：Thomas Wu [(@thomaswcy)](https://github.com/thomaswcy)
 
-产品规划：Meli Liu [(@MeliLXT)](https://github.com/MeliLXT)
+产品规划 & 英语翻译：Meli Liu [(@MeliLXT)](https://github.com/MeliLXT)
 
 教程编写：RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
 

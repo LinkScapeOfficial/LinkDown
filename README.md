@@ -14,6 +14,12 @@
 
 English | [简体中文](https://github.com/LinkScapeFoundation/LinkDown/blob/main/README_CN.md)
 
+## Donate
+
+https://bank.hackclub.com/donations/start/linkscape
+
+<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">
+
 ## Download link:
 
 https://github.com/LinkScapeFoundation/LinkDown/releases/latest
@@ -22,9 +28,9 @@ https://github.com/LinkScapeFoundation/LinkDown/releases/latest
 
 Software develop：Thomas Wu [(@thomaswcy)](https://github.com/thomaswcy)
 
-Product planning：Meli Liu [(@MeliLXT)](https://github.com/MeliLXT)
+Product planning & English translation：Meli Liu [(@MeliLXT)](https://github.com/MeliLXT)
 
-Tutorials writing：RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
+Tutorials：RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
 
 Logo design：MemeCat [(@SolarisEco)](https://t.me/SolarisEco)
 
