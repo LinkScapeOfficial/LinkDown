@@ -3,7 +3,7 @@
 
 #define MyAppName "LinkDown"
 #define MyAppVersion "0.1.1"
-#define MyAppPublisher "LinkScape Foundation"
+#define MyAppPublisher "LinkScape"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -33,7 +33,7 @@ Name: modifypath; Description: Add LinkDown to PATH; Flags: checkablealone
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
-Name: "chinesesimplified"; MessagesFile: "compiler:Languages\ChineseSimplified.isl"
+Name: "chinesesimplified"; MessagesFile: "{src}\Languages\ChineseSimplified.isl"
 
 [Code]
 const
