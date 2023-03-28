@@ -12,18 +12,18 @@
 <img alt="GitHub" src="https://img.shields.io/github/license/LinkScapeFoudation/LinkDown?style=for-the-badge">
 <p>
 
-[English](https://github.com/LinkScapeFoundation/LinkDown/blob/main/README.md) | 简体中文
+[English](https://github.com/LinkScapeOfficial/LinkDown/blob/main/README.md) | 简体中文
 
 ## 捐款
 
-https://bank.hackclub.com/donations/start/linkscape
+通过 Stripe 捐款：[链接](https://bank.hackclub.com/donations/start/linkscape)
 
-<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">
+[<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://bank.hackclub.com/donations/start/linkscape)
 
 
 ## 下载链接
 
-https://github.com/LinkScapeFoudation/LinkDown/releases/latest
+https://github.com/LinkScapeOfficial/LinkDown/releases/latest
 
 ------
 
@@ -33,7 +33,7 @@ https://github.com/LinkScapeFoudation/LinkDown/releases/latest
 
 教程编写：RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
 
-商标设计：MemeCat [(@SolarisEco)](https://t.me/SolarisEco)
+商标设计：MemeCat [(@Powerlean)](https://github.com/Powerlean)
 
 ------
 
@@ -41,7 +41,7 @@ https://github.com/LinkScapeFoudation/LinkDown/releases/latest
 
 本软件集成了 lux，yt-dlp，ffmpeg，python，ContextSearch-Native-App 五款软件并且会自动配置，省去各种繁琐步骤。
 
-本软件基于 Inno Setup 开发，源文件在 repo 中。
+本软件基于 Inno Setup 开发，源文件在 repo 中，下载项目后运行 LinkDown_Wizzard.iss
 
 ## 使用教程
 
