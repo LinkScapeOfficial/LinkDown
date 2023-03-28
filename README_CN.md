@@ -18,7 +18,7 @@
 
 通过 Stripe 捐款：[链接](https://bank.hackclub.com/donations/start/linkscape)
 
-[<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://bank.hackclub.com/donations/start/linkscape)
+[<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://hackclub.com/bank)
 
 
 ## 下载链接
