@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/LinkScapeFoundation/LinkDown/blob/main/oringin.png?raw=true" width = "256" height = "256">
+<img src="https://github.com/LinkScapeOfficial/LinkDown/blob/main/oringin.png?raw=true" width = "256" height = "256">
 <h1 align="center">LinkDown</h1>
 <p align="center">
 <i>A Video Downloader. Easier than easy.</i>
@@ -8,21 +8,21 @@
 <img src="https://forthebadge.com/images/badges/built-with-love.svg">
 <p>
 <p align="center">
-<img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/LinkScapeFoundation/LinkDown/total?style=for-the-badge">
-<img alt="GitHub" src="https://img.shields.io/github/license/LinkScapeFoundation/LinkDown?style=for-the-badge">
+<img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/LinkScapeOfficial/LinkDown/total?style=for-the-badge">
+<img alt="GitHub" src="https://img.shields.io/github/license/LinkScapeOfficial/LinkDown?style=for-the-badge">
 <p>
 
 English | [简体中文](https://github.com/LinkScapeFoundation/LinkDown/blob/main/README_CN.md)
 
 ## Donate
 
-https://bank.hackclub.com/donations/start/linkscape
+Donate via Stripe: [here](https://bank.hackclub.com/donations/start/linkscape)
 
-<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">
+[<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://hackclub.com/bank)
 
 ## Download link:
 
-https://github.com/LinkScapeFoundation/LinkDown/releases/latest
+https://github.com/LinkScapeOfficial/LinkDown/releases/latest
 
 ------
 
@@ -32,7 +32,7 @@ Product planning & English translation：Meli Liu [(@MeliLXT)](https://github.co
 
 Tutorials：RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
 
-Logo design：MemeCat [(@SolarisEco)](https://t.me/SolarisEco)
+Logo design：MemeCat [(@Powerlean)](https://github.com/Powerlean)
 
 ------
 
@@ -42,13 +42,15 @@ This software is the integration of lux，yt-dlp，ffmpeg，python，ContextSear
 
 This software is developed based on Inno Setup, with source files in repo.
 
+Install Inno Setup, Download the repo, and run LinkDown_Wizard.iss
+
 ## Tutorial
 
 ### I) Install browser extension
 
 Install the browser extension **ContextSearch web-ext**. 
 
-Address: [Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/contextsearch-web-ext)、[Chrome](https://chrome.google.com/webstore/detail/ddippghibegbgpjcaaijbacfhjjeafjh)
+Address: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/contextsearch-web-ext)、[Chrome](https://chrome.google.com/webstore/detail/ddippghibegbgpjcaaijbacfhjjeafjh)
 
 ### II) Importing extended configuration
 
