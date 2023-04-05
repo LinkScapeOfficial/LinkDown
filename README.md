@@ -20,6 +20,12 @@ Donate via Stripe: [here](https://bank.hackclub.com/donations/start/linkscape)
 
 [<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://hackclub.com/bank)
 
+## Discussion Group
+
+Discord: https://discord.gg/WDdvabyKaH
+
+Telegram: https://t.me/LinkScapeChat
+
 ## Download link:
 
 https://github.com/LinkScapeOfficial/LinkDown/releases/latest
