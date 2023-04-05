@@ -20,6 +20,11 @@
 
 [<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://hackclub.com/bank)
 
+## 讨论群
+
+Discord: https://discord.gg/WDdvabyKaH
+
+Telegram: https://t.me/LinkScapeChat
 
 ## 下载链接
 
