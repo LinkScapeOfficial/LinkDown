@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "LinkDown for Browsers",
+  "description": "LinkDown's Add-on for browsers, download the favourite videos you like within a click!",
+  "version": "0.2",
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "default_locale": "en",
+  "permissions": ["<all_urls>", "contextMenus", "cookies", "nativeMessaging"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "scripts": ["browser-polyfill.js", "background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["browser-polyfill.js", "background.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon48.png",
+    "default_title": "LinkDown for Browsers"
+  },
+  "applications": {
+    "gecko": {
+      "id": "linkdown_for_browsers@linkscape.app",
+      "strict_min_version": "57.0"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "linkdown_for_browsers@linkscape.app"
+    },
+    "chrome": {
+      "id": "lbgiocaippfiilgkgppmlonoaddljidk"
+    }
+  }
+}

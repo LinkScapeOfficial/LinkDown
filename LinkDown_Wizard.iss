@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LinkDown"
-#define MyAppVersion "0.1.1"
+#define MyAppVersion "0.2"
 #define MyAppPublisher "LinkScape"
 
 [Setup]
@@ -13,7 +13,7 @@ AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
-DefaultDirName={autopf}\{#MyAppName}
+DefaultDirName={autopf}\LinkScape\{#MyAppName}
 DisableDirPage=yes
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
@@ -33,7 +33,7 @@ Name: modifypath; Description: Add LinkDown to PATH; Flags: checkablealone
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
-Name: "chinesesimplified"; MessagesFile: "{src}\Languages\ChineseSimplified.isl"
+Name: "chinesesimplified"; MessagesFile: "ChineseSimplified.isl"
 
 [Code]
 const
@@ -49,9 +49,8 @@ end;
 
 [Files]
 Source: "LinkDown\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "ContextSearch-webext\*"; DestDir: "{userappdata}\ContextSearch-webext"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
-Root: HKCR; Subkey: "Software\Mozilla\NativeMessagingHosts\contextsearch_webext"; ValueType: String; ValueData: "{userappdata}\ContextSearch-webext\Firefox\contextsearch_webext.json"; MinVersion: 0.0,6.0;
-Root: HKCR; Subkey: "Software\Google\Chrome\NativeMessagingHosts\contextsearch_webext"; ValueType: String; ValueData: "{userappdata}\ContextSearch-webext\Chrome\contextsearch_webext.json"; MinVersion: 0.0,6.0;
+Root: HKCU; Subkey: "Software\Mozilla\NativeMessagingHosts\linkdown"; ValueType: String; ValueData: "{app}\firefox.json"; MinVersion: 0.0,6.0;
+Root: HKCU; Subkey: "Software\Google\Chrome\NativeMessagingHosts\linkdown"; ValueType: String; ValueData: "{app}\chrome.json"; MinVersion: 0.0,6.0;

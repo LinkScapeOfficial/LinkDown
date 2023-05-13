@@ -2,7 +2,7 @@
 <img src="https://github.com/LinkScapeOfficial/LinkDown/blob/main/oringin.png?raw=true" width = "256" height = "256">
 <h1 align="center">LinkDown</h1>
 <p align="center">
-<i>A Video Downloader. Easier than easy.</i>
+<i>A simple link, a easier life.</i>
 <p>
 <p align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg">
@@ -12,11 +12,12 @@
 <img alt="GitHub" src="https://img.shields.io/github/license/LinkScapeOfficial/LinkDown?style=for-the-badge">
 <p>
 
+
 English | [简体中文](https://github.com/LinkScapeFoundation/LinkDown/blob/main/README_CN.md)
 
 ## Donate
 
-Donate via Stripe: [here](https://bank.hackclub.com/donations/start/linkscape)
+Donate via Stripe: [here](https://linkscape.app/donate)
 
 [<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://hackclub.com/bank)
 
@@ -24,72 +25,54 @@ Donate via Stripe: [here](https://bank.hackclub.com/donations/start/linkscape)
 
 Discord: https://discord.gg/WDdvabyKaH
 
-Telegram: https://t.me/LinkScapeChat
+## Download Link
 
-## Download link:
-
-https://github.com/LinkScapeOfficial/LinkDown/releases/latest
+https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_setup.exe
 
 ------
 
-Software develop：Thomas Wu [(@thomaswcy)](https://github.com/thomaswcy)
+Software developed by **Thomas Wu** ([@thomaswcy](https://github.com/thomaswcy), Founder of LinkScape)
 
-Product planning & English translation：Meli Liu [(@MeliLXT)](https://github.com/MeliLXT)
+Translted to English by **Meli Liu** ([@MeliLXT](https://github.com/MeliLXT), Founder of LinkScape)
 
-Tutorials：RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
+Logo designed by **Tzu-Yun Hsiao** ([@Powerlean](https://github.com/Powerlean), Head of Designs at LinkScape)
 
-Logo design：MemeCat [(@Powerlean)](https://github.com/Powerlean)
+Tutorials written by RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
 
 ------
 
-## Software description
+## Description
 
-This software is the integration of lux，yt-dlp，ffmpeg，python，ContextSearch-Native-App, with automatic configuration meanwhile discarding the sophisticated steps for users.
+This software is a integration of you-get, yt-dlp, ffmpeg, and python with automatic configuration, including a easy-to-use browser add-on, discarding the sophisticated steps for users.
 
-This software is developed based on Inno Setup, with source files in repo.
+## Development
 
-Install Inno Setup, Download the repo, and run LinkDown_Wizard.iss
+This software is developed based on Inno Setup, with the source file in repository, run `LinkDown_Wizzard.iss` to compile.
+
+The source code of the Firefox Manifest V2 version of LinkDown for Browsers is at the `webext-firefox` folder in this repository; The source code of the Chrome Manifest V3 of LinkDown for Browsers is at the `webext-chrome` folder in this repository.
+
+*P.S. Manifest V2 is still used for Firefox for there is still no support of Manifest V3 for the current ESR version; Manifest V3 will be used after the release of Firefox 114 ESR on June 6th, 2023.*
 
 ## Tutorial
 
-### I) Install browser extension
+### I) Install Application
 
-Install the browser extension **ContextSearch web-ext**. 
+Install and run `linkdown_setup.exe` at the [Download Link](#Download Link) of LinkDown.
 
-Address: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/contextsearch-web-ext)、[Chrome](https://chrome.google.com/webstore/detail/ddippghibegbgpjcaaijbacfhjjeafjh)
+### II) Install Add-on
 
-### II) Importing extended configuration
+Install the browser add-on **LinkDown for Browsers**. Link: [Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/linkdown-for-browsers/), [Chrome](https://chrome.google.com/webstore/detail/linkdown-for-browsers/lnckamlbboggdkkgnkaocibpnilhemhc).
 
-Open **Setting Page** of ContextSearch web-ext, and import configuration **ContextSearchOptions.json**. (Make sure to select the version.)
+### III) Usage
 
-Configuration downloading：[Firefox version](https://fastly.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/ContextSearchOptions_Firefox.json)、[Chrome version](https://fastly.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/ContextSearchOptions_Chrome.json)、[Local downloads](https://www.lanzouh.com/b07nx1b4f)
+Right-click on the webpage, and choose the `Download Video` option in the ContextMenu:
 
-![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial1.jpg?raw=true)
+![linkdown_usage_cn](C:\Users\thomaswcy\Documents\GitHub\LinkDown\assets\linkdown_usage_cn-16839854726571.gif)
 
-### III) Enabling permission 
 
-**“Messenger app is not connected”** might appear when downloading videos after importing configurations.
-
-In this case, choose and click “**Request Permission** in the extended permission settings, then **Restart Browser**
-
-**Complete shutdown** is a successful restart; restart fails if the browser is still running in the background.
-
-![](https://github.com/LinkScapeFoudation/LinkDown/blob/main/Tutorial2.jpg?raw=true)
-
-### IV) Using
-
-Right click in the downloading page, and see the following image:
-
-![](https://github.com/LinkScapeFoundation/LinkDown/blob/main/Tutotial4.png?raw=true)
-
-lux is for Chinese Websites, BBDown is for bilibili, yt-dlp is for all other websites.
-
-Final program:
-
-![](https://github.com/LinkScapeFoundation/LinkDown/blob/main/Tutorial5.gif?raw=true)
 
 ------
 
-## Citation
+## References
 
-A large amount of softwares is cited in this program, link: [REFERENCE.md](https://github.com/LinkScapeFoundation/LinkDown/blob/main/REFERENCE.md)
+A number of softwares were used in project, see [REFERENCE.md](REFERENCE.md) for details.

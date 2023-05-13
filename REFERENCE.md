@@ -1,8 +1,10 @@
 # REFERENCE
 
-## lux
+## you-get
 
-https://github.com/iawia002/lux/
+Source Code: https://github.com/soimort/you-get
+
+Binary Files: https://github.com/LussacZheng/you-get.exe/
 
 ## yt-dlp
 
@@ -26,8 +28,8 @@ Inno Setup: https://jrsoftware.org/isinfo.php/
 
 modpath.iss: http://www.legroom.net/software/
 
-Inno-Setup-Chinese-Simplified-Translation: https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation/
+Inno Setup Translation (Chinese Simplified): https://github.com/kira-96/Inno-Setup-Chinese-Simplified-Translation/
 
-## ContextSearch-Native-App
+## webextension-polyfill
 
-https://github.com/ssborbis/ContextSearch-Native-App/
+https://www.npmjs.com/package/webextension-polyfill
