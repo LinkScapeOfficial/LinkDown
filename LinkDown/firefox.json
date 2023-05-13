@@ -1,0 +1,9 @@
+{
+    "name": "linkdown",
+    "description": "Launches external video download softwares",
+    "type": "stdio",
+    "allowed_extensions": [
+        "linkdown_for_browsers@linkscape.app"
+    ],
+    "path": "nativehost.bat"
+}

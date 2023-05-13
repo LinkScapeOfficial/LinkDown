@@ -1,0 +1,9 @@
+{
+    "name": "linkdown",
+    "description": "Launches external video download softwares",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://lnckamlbboggdkkgnkaocibpnilhemhc/"
+    ],
+    "path": "nativehost.bat"
+}
