@@ -57,7 +57,7 @@ The source code of the Firefox Manifest V2 version of LinkDown for Browsers is a
 
 ### I) Install Application
 
-Install and run `linkdown_setup.exe` at the [Download Link](#Download Link) of LinkDown.
+Install and run `linkdown_setup.exe` at the [Download Link](#Download_Link) of LinkDown.
 
 ### II) Install Add-on
 
