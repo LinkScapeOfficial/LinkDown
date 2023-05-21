@@ -13,7 +13,7 @@
 <p>
 
 
-English | [简体中文](https://github.com/LinkScapeFoundation/LinkDown/blob/main/README_CN.md)
+English | [简体中文](https://github.com/LinkScapeOfficial/LinkDown/blob/main/README_CN.md)
 
 ## Donate
 
@@ -57,7 +57,7 @@ The source code of the Firefox Manifest V2 version of LinkDown for Browsers is a
 
 ### I) Install Application
 
-Install and run `linkdown_setup.exe` at the [Download Link](#Download Link) of LinkDown.
+Install and run `linkdown_setup.exe` at the [Download Link](#Download_Link) of LinkDown.
 
 ### II) Install Add-on
 
@@ -67,7 +67,7 @@ Install the browser add-on **LinkDown for Browsers**. Link: [Firefox](https://ad
 
 Right-click on the webpage, and choose the `Download Video` option in the ContextMenu:
 
-![linkdown_usage_cn](C:\Users\thomaswcy\Documents\GitHub\LinkDown\assets\linkdown_usage_cn-16839854726571.gif)
+![linkdown_usage_cn](https://cdn.linkscape.app/linkdown_usage_cn.gif)
 
 
 
