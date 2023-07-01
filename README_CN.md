@@ -2,8 +2,6 @@
 <img src="https://github.com/LinkScapeOfficial/LinkDown/blob/main/oringin.png?raw=true" width = "256" height = "256">
 <h1 align="center">LinkDown</h1>
 <p align="center">
-<i>鏈一程 益萬人</i>
-<p>
 <p align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg">
 <p>
