@@ -30,7 +30,7 @@ https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_
 
 Software developed by **Thomas Wu** ([@thomaswcy](https://github.com/thomaswcy), Founder of LinkScape)
 
-Translted to English by **Meli Liu** ([@MeliLXT](https://github.com/MeliLXT), Founder of LinkScape)
+Translated to English by **Meli Liu** ([@MeliLXT](https://github.com/MeliLXT), Founder of LinkScape)
 
 Logo designed by **Tzu-Yun Hsiao** ([@Powerlean](https://github.com/Powerlean), Head of Designs at LinkScape)
 
