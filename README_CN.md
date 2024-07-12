@@ -26,7 +26,7 @@ https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_
 
 ------
 
-软件开发：**Thomas Wu**（[@TakumiBC](https://github.com/thomaswcy)，LinkScape 创始人）
+软件开发：**Thomas Wu**（[@TakumiBC](https://github.com/TakumiBC)，LinkScape 创始人）
 
 商标设计：**Hsiao T'z-Yün**（[@Powerlean](https://github.com/Powerlean)，LinkScape 首席设计师）
 
@@ -36,7 +36,7 @@ https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_
 
 ## 软件概述
 
-本软件集成了 yt-dlp，ffmpeg，python 四款软件进行自动配置，并且编写了一个简单易用的浏览器附加组件，使用户下载视频时省去各种繁琐步骤。
+本软件集成了 yt-dlp，ffmpeg，python 三款软件进行自动配置，并且编写了一个简单易用的浏览器附加组件，使用户下载视频时省去各种繁琐步骤。
 
 ## 软件开发
 
