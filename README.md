@@ -14,7 +14,7 @@ English | [简体中文](https://github.com/LinkScapeOfficial/LinkDown/blob/main
 
 ## Donate
 
-<img src="donate.jpg" width="200">
+<img src="donate.jpg" width="300">
 
 ## Discussion Group
 
