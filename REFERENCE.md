@@ -1,10 +1,8 @@
 # REFERENCE
 
-## you-get
+## BBDown
 
-Source Code: https://github.com/soimort/you-get
-
-Binary Files: https://github.com/LussacZheng/you-get.exe/
+https://github.com/nilaoda/BBDown
 
 ## yt-dlp
 

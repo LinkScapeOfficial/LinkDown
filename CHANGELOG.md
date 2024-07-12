@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0
+
+Update binaries
+
+Remove you-get
+
 ## 0.2
 
 Update binaries
