@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/LinkScapeOfficial/LinkDown/blob/main/oringin.png?raw=true" width = "256" height = "256">
+<img src="https://github.com/LinkScapeOfficial/LinkDown/blob/main/origin.png?raw=true" width = "256" height = "256">
 <h1 align="center">LinkDown</h1>
 <p align="center">
 <p align="center">
@@ -36,7 +36,7 @@ https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_
 
 ## 软件概述
 
-本软件集成了 yt-dlp，ffmpeg，python 三款软件进行自动配置，并且编写了一个简单易用的浏览器附加组件，使用户下载视频时省去各种繁琐步骤。
+本软件集成了 `yt-dlp`，`ffmpeg`，Python 三款软件进行自动配置，并且编写了一个简单易用的浏览器附加组件，使用户下载视频时省去各种繁琐步骤。
 
 ## 软件开发
 
