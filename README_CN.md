@@ -14,7 +14,7 @@
 
 ## 捐款
 
-微信：![](donate.jpg)
+<img src="donate.jpg" width="300">
 
 ## 讨论群
 
