@@ -28,11 +28,9 @@ https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_
 
 ------
 
-Software developed by **Thomas Wu** ([@thomaswcy](https://github.com/thomaswcy), Founder of LinkScape)
+Software developed by **Thomas Wu** ([@TakumiBC](https://github.com/thomaswcy), Founder of LinkScape)
 
-Translated to English by **Meli Liu** ([@MeliLXT](https://github.com/MeliLXT), Founder of LinkScape)
-
-Logo designed by **Tzu-Yun Hsiao** ([@Powerlean](https://github.com/Powerlean), Head of Designs at LinkScape)
+Logo designed by **Hsiao Tz-Yun** ([@Powerlean](https://github.com/Powerlean), Head of Designs at LinkScape)
 
 Tutorials written by RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
 
@@ -48,7 +46,7 @@ This software is developed based on Inno Setup, with the source file in reposito
 
 The source code of the Firefox Manifest V2 version of LinkDown for Browsers is at the `webext-firefox` folder in this repository; The source code of the Chrome Manifest V3 of LinkDown for Browsers is at the `webext-chrome` folder in this repository.
 
-*P.S. Manifest V2 is still used for Firefox for there is still no support of Manifest V3 for the current ESR version; Manifest V3 will be used after the release of Firefox 114 ESR on June 6th, 2023.*
+*P.S. Manifest V2 is still used for Firefox for compatibility.*
 
 ## Tutorial
 
