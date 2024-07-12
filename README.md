@@ -30,7 +30,7 @@ https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_
 
 Software developed by **Thomas Wu** ([@TakumiBC](https://github.com/thomaswcy), Founder of LinkScape)
 
-Logo designed by **Hsiao Tz-Yun** ([@Powerlean](https://github.com/Powerlean), Head of Designs at LinkScape)
+Logo designed by **Hsiao T'z-Yün** ([@Powerlean](https://github.com/Powerlean), Head of Designs at LinkScape)
 
 Tutorials written by RunningCheese [(@RunningCheese)](https://github.com/RunningCheese)
 
