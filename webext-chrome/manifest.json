@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "LinkDown for Browsers",
   "description": "LinkDown's Add-on for browsers, download the favourite videos you like within a click!",
-  "version": "0.2",
+  "version": "1.0",
   "icons": {
     "48": "icons/icon48.png",
     "96": "icons/icon96.png"

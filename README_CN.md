@@ -14,9 +14,7 @@
 
 ## 捐款
 
-通过 Stripe 捐款：[链接](https://linkscape.app/donate)
-
-[<img src="https://bank.hackclub.com/brand/hcb-logo-original-light.svg">](https://hackclub.com/bank)
+微信：![](donate.jpg)
 
 ## 讨论群
 
@@ -46,7 +44,7 @@ https://github.com/LinkScapeOfficial/LinkDown/releases/latest/download/linkdown_
 
 LinkDown for Browsers 的 Firefox Manifest V2 版本源代码在repo中的 `webext-firefox` 目录中；Chrome Manifest V3 版本源代码在repo中的 `webext-chrome` 目录中。
 
-*注：Firefox 由于当前 ESR 版本尚不支持 Manifest V3，在 Firefox 114 ESR 于 2023年6月7日发布后将会改用 Manifest V3。*
+*注：Firefox 由于兼容性原因，仍舊保持使用 Manifest V2。*
 
 ## 使用教程
 
@@ -68,4 +66,4 @@ LinkDown for Browsers 的 Firefox Manifest V2 版本源代码在repo中的 `webe
 
 ## 引用
 
-本项目引用了大量软件，详情请查看 [REFERENCE.md](https://github.com/LinkScapeFoudation/LinkDown/blob/main/REFERENCE.md).
+本项目引用了大量软件，详情请查看 [REFERENCE.md](https://github.com/LinkScapeOfficial/LinkDown/blob/main/REFERENCE.md).

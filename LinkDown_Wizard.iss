@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "LinkDown"
-#define MyAppVersion "0.2"
+#define MyAppVersion "1.0"
 #define MyAppPublisher "LinkScape"
 
 [Setup]
