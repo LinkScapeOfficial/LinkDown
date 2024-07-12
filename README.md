@@ -14,7 +14,7 @@ English | [简体中文](https://github.com/LinkScapeOfficial/LinkDown/blob/main
 
 ## Donate
 
-WeChat：![](donate.jpg)
+<img src="donate.jpg" width="200">
 
 ## Discussion Group
 
@@ -36,7 +36,7 @@ Tutorials written by RunningCheese [(@RunningCheese)](https://github.com/Running
 
 ## Description
 
-This software is a integration of yt-dlp, ffmpeg, and python with automatic configuration, including a easy-to-use browser add-on, discarding the sophisticated steps for users.
+This software is a integration of `yt-dlp`, `ffmpeg`, and python with automatic configuration, including a easy-to-use browser add-on, discarding the sophisticated steps for users.
 
 ## Development
 
