@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/LinkScapeOfficial/LinkDown/blob/main/oringin.png?raw=true" width = "256" height = "256">
+<img src="https://github.com/LinkScapeOfficial/LinkDown/blob/main/origin.png?raw=true" width = "256" height = "256">
 <h1 align="center">LinkDown</h1>
 <p align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg">
@@ -36,7 +36,7 @@ Tutorials written by RunningCheese [(@RunningCheese)](https://github.com/Running
 
 ## Description
 
-This software is a integration of yt-dlp, ffmpeg, and python with automatic configuration, including a easy-to-use browser add-on, discarding the sophisticated steps for users.
+This software is a integration of `yt-dlp`, `ffmpeg`, and python with automatic configuration, including a easy-to-use browser add-on, discarding the sophisticated steps for users.
 
 ## Development
 
