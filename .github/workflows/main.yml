@@ -16,7 +16,7 @@ jobs:
       run: |
         cd LinkDown
         del yt-dlp.exe
-        curl -L --max-redirs -1  --output https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+        curl -L --max-redirs -1  --output yt-dlp.exe https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 
     - name: Compile Setup Wizard
       uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
