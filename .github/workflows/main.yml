@@ -1,0 +1,64 @@
+name: Build LinkDown
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  Build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Download yt-dlp
+      run: |
+        cd LinkDown
+        del yt-dlp.exe
+        curl -L --max-redirs -1  --output https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+
+    - name: Compile Setup Wizard
+      uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
+      with:
+        path: LinkDown_Wizard.iss
+        options: /O+
+        
+    - name: Upload Setup Wizard
+      uses: actions/upload-artifact@v4
+      with:
+        name: setup
+        path: Output\linkdown_setup.exe
+
+
+  Upload:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Download Release Folder
+        uses: actions/download-artifact@v4
+        with:
+          name: setup
+          path: Output
+
+      - name: Setup Git Environment
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name github-actions[bot]
+
+      - name: Generate Release Tag
+        id: tag
+        run: |
+          echo "::set-output name=release_version::1.0.1"
+          
+      - name: Upload to Releases
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          name: LinkDown ${{ steps.tag.outputs.release_version }}
+          tag_name: ${{ steps.tag.outputs.release_version }}
+          files: Output/linkdown_setup.exe
