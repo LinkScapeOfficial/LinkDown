@@ -52,7 +52,7 @@ jobs:
       - name: Generate Release Tag
         id: tag
         run: |
-          echo "::set-output name=release_version::1.0.1"
+          echo "::set-output name=release_version::1.1"
           
       - name: Upload to Releases
         uses: softprops/action-gh-release@v2
