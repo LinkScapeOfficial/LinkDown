@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.1
+
+Update binaries
+
+Automatically push to GitHub
+
+## 1.0.1
+
+Update yt-dlp
+
+Use GitHub Action
+
 ## 1.0
 
 Update binaries
