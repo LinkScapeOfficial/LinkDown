@@ -2,9 +2,7 @@
 
 ## 1.1
 
-Update binaries
-
-Automatically push to GitHub
+Update BBDown
 
 ## 1.0.1
 
