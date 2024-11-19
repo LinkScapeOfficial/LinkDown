@@ -12,10 +12,6 @@
 
 English | [简体中文](https://github.com/LinkScapeOfficial/LinkDown/blob/main/README_CN.md)
 
-## Donate
-
-<img src="donate.jpg" width="300">
-
 ## Discussion Group
 
 Discord: https://discord.gg/WDdvabyKaH
