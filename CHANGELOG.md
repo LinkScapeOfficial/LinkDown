@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.1
+
+Update binaries
+
 ## 1.1
 
 Update BBDown

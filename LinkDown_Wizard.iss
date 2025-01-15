@@ -1,5 +1,5 @@
 #define MyAppName "LinkDown"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.1.1"
 #define MyAppPublisher "LinkScape"
 
 [Setup]
