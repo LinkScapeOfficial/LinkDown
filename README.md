@@ -36,7 +36,7 @@ This software is a integration of `yt-dlp`, `ffmpeg`, and python with automatic 
 
 ## Development
 
-This software is developed based on Inno Setup, with the source file in repository, run `LinkDown_Wizzard.iss` to compile.
+This software is developed based on Inno Setup, with the source file in repository. Run `LinkDown_Wizzard.iss` to compile.
 
 The source code of the Firefox Manifest V2 version of LinkDown for Browsers is at the `webext-firefox` folder in this repository; The source code of the Chrome Manifest V3 of LinkDown for Browsers is at the `webext-chrome` folder in this repository.
 
