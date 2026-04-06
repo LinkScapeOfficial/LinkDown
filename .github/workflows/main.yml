@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 16 * * *'
 
+permissions:
+  contents: write
+
 jobs:
   Prepare:
     runs-on: ubuntu-latest
@@ -11,6 +14,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        
+      - name: Setup Git Environment
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name github-actions[bot]
 
       - name: Clean Up
         run: |
@@ -38,7 +46,7 @@ jobs:
           url=$(curl -s https://api.github.com/repos/nilaoda/BBDown/releases/latest \
             | grep browser_download_url \
             | grep win-x64.zip \
-            | cut -d '"' -f 4 \
+            | cut -d '"' -f 4)
           curl -L -o bbdown.zip "$url"
           unzip bbdown.zip
           rm bbdown.zip
@@ -56,21 +64,29 @@ jobs:
             https://www.python.org/ftp/python/$latest/python-$latest-embed-amd64.zip
           unzip python.zip
           rm python.zip
-        
-
-      - name: Upload prepared folder
+          
+      - name: Upload Prepared Folder
         uses: actions/upload-artifact@v4
         with:
           name: prepared
           path: .
 
-
+      - name: Commit Changes
+        run: |
+          git add LinkDown/*
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto update dependencies ($(date +'%Y.%m.%d'))"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+          
   Build:
     needs: Prepare
     runs-on: windows-latest
 
-    steps:
-      - name: Download prepared files
+    steps:     
+      - name: Download Prepared Folder
         uses: actions/download-artifact@v4
         with:
           name: prepared
@@ -99,19 +115,15 @@ jobs:
           name: setup
           path: Output
 
-      
-
-      - name: Generate Date Tag
+      - name: Setup Git Environment
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name github-actions[bot]
+          
+      - name: Generate Release Tag
         id: tag
         run: |
           echo "release_version=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
-
-      - name: Delete existing release (if exists)
-        run: |
-          gh release delete ${{ steps.tag.outputs.release_version }} -y || true
-          git push origin :refs/tags/${{ steps.tag.outputs.release_version }} || true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload to Releases
         uses: softprops/action-gh-release@v2
@@ -120,4 +132,4 @@ jobs:
         with:
           name: LinkDown ${{ steps.tag.outputs.release_version }}
           tag_name: ${{ steps.tag.outputs.release_version }}
-          files: Output/*.exe
+          files: Output/linkdown_setup.exe
