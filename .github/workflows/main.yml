@@ -57,13 +57,23 @@ jobs:
           latest=$(curl -s https://www.python.org/ftp/python/ \
             | grep -oP 'href="3\.\d+\.\d+/' \
             | grep -oP '3\.\d+\.\d+' \
-            | sort -V \
-            | tail -n 1)
-          echo "Latest Python: $latest"
+            | sort -Vr \
+            | while read v; do
+                url="https://www.python.org/ftp/python/$v/python-$v-embed-amd64.zip"
+                if curl -sfI "$url" > /dev/null; then
+                  echo $v
+                  break
+                fi
+              done)
+          echo "Valid Python version: $latest"
           curl -L -o python.zip \
             https://www.python.org/ftp/python/$latest/python-$latest-embed-amd64.zip
-          unzip python.zip
+          unzip -o python.zip
           rm python.zip
+
+
+
+          
           
       - name: Upload Prepared Folder
         uses: actions/upload-artifact@v4
