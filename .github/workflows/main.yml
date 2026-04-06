@@ -1,59 +1,118 @@
 name: Build LinkDown
-
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: '0 16 * * *'
 
 jobs:
+  Prepare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Clean Up
+        run: |
+          cd LinkDown
+          cp nativehost.bat ../nativehost.bat.bak
+          cp nativehost.py ../nativehost.py.bak
+          rm -rf ./*
+          mv ../nativehost.bat.bak nativehost.bat
+          mv ../nativehost.py.bak nativehost.py
+          rm -rf ../nativehost.bat.bak
+          rm -rf ../nativehost.py.bak
+
+      - name: Download yt-dlp
+        run: |
+          cd LinkDown
+          curl -L -o yt-dlp.exe https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+
+      - name: Download BBDown
+        run: |
+          cd LinkDown
+
+      - name: Download BBDown
+        run: |
+          cd LinkDown
+          url=$(curl -s https://api.github.com/repos/nilaoda/BBDown/releases/latest \
+            | grep browser_download_url \
+            | grep win-x64.zip \
+            | cut -d '"' -f 4 \
+          curl -L -o bbdown.zip "$url"
+          unzip bbdown.zip
+          rm bbdown.zip
+
+      - name: Download Python
+        run: |
+          cd LinkDown
+          latest=$(curl -s https://www.python.org/ftp/python/ \
+            | grep -oP 'href="3\.\d+\.\d+/' \
+            | grep -oP '3\.\d+\.\d+' \
+            | sort -V \
+            | tail -n 1)
+          echo "Latest Python: $latest"
+          curl -L -o python.zip \
+            https://www.python.org/ftp/python/$latest/python-$latest-embed-amd64.zip
+          unzip python.zip
+          rm python.zip
+        
+
+      - name: Upload prepared folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: prepared
+          path: .
+
+
   Build:
+    needs: Prepare
     runs-on: windows-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@main
+      - name: Download prepared files
+        uses: actions/download-artifact@v4
+        with:
+          name: prepared
 
-    - name: Download yt-dlp
-      run: |
-        cd LinkDown
-        del yt-dlp.exe
-        curl -L --max-redirs -1  --output yt-dlp.exe https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+      - name: Compile Setup Wizard
+        uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
+        with:
+          path: LinkDown_Wizard.iss
+          options: /O+
 
-    - name: Compile Setup Wizard
-      uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
-      with:
-        path: LinkDown_Wizard.iss
-        options: /O+
-        
-    - name: Upload Setup Wizard
-      uses: actions/upload-artifact@v4
-      with:
-        name: setup
-        path: Output\linkdown_setup.exe
+      - name: Upload Installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: setup
+          path: Output\linkdown_setup*.exe
 
 
   Upload:
     needs: Build
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@main
 
+    steps:
       - name: Download Release Folder
         uses: actions/download-artifact@v4
         with:
           name: setup
           path: Output
 
-      - name: Setup Git Environment
-        run: |
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config --global user.name github-actions[bot]
+      
 
-      - name: Generate Release Tag
+      - name: Generate Date Tag
         id: tag
         run: |
-          echo "::set-output name=release_version::1.1.1"
-          
+          echo "release_version=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+
+      - name: Delete existing release (if exists)
+        run: |
+          gh release delete ${{ steps.tag.outputs.release_version }} -y || true
+          git push origin :refs/tags/${{ steps.tag.outputs.release_version }} || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload to Releases
         uses: softprops/action-gh-release@v2
         env:
@@ -61,4 +120,4 @@ jobs:
         with:
           name: LinkDown ${{ steps.tag.outputs.release_version }}
           tag_name: ${{ steps.tag.outputs.release_version }}
-          files: Output/linkdown_setup.exe
+          files: Output/*.exe
