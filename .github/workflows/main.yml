@@ -1,43 +1,124 @@
 name: Build LinkDown
-
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * *'
 
+permissions:
+  contents: write
 
 jobs:
-  Build:
-    runs-on: windows-latest
+  Prepare:
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@main
-
-    - name: Download yt-dlp
-      run: |
-        cd LinkDown
-        del yt-dlp.exe
-        curl -L --max-redirs -1  --output yt-dlp.exe https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
-
-    - name: Compile Setup Wizard
-      uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
-      with:
-        path: LinkDown_Wizard.iss
-        options: /O+
+      - name: Checkout
+        uses: actions/checkout@v6
         
-    - name: Upload Setup Wizard
-      uses: actions/upload-artifact@v4
-      with:
-        name: setup
-        path: Output\linkdown_setup.exe
+      - name: Setup Git Environment
+        run: |
+          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --global user.name github-actions[bot]
+
+      - name: Clean Up
+        run: |
+          cd LinkDown
+          cp nativehost.bat ../nativehost.bat.bak
+          cp nativehost.py ../nativehost.py.bak
+          rm -rf ./*
+          mv ../nativehost.bat.bak nativehost.bat
+          mv ../nativehost.py.bak nativehost.py
+          rm -rf ../nativehost.bat.bak
+          rm -rf ../nativehost.py.bak
+
+      - name: Download yt-dlp
+        run: |
+          cd LinkDown
+          curl -L -o yt-dlp.exe https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+
+      - name: Download BBDown
+        run: |
+          cd LinkDown
+
+      - name: Download BBDown
+        run: |
+          cd LinkDown
+          url=$(curl -s https://api.github.com/repos/nilaoda/BBDown/releases/latest \
+            | grep browser_download_url \
+            | grep win-x64.zip \
+            | cut -d '"' -f 4)
+          curl -L -o bbdown.zip "$url"
+          unzip bbdown.zip
+          rm bbdown.zip
+
+      - name: Download Python
+        run: |
+          cd LinkDown
+          latest=$(curl -s https://www.python.org/ftp/python/ \
+            | grep -oP 'href="3\.\d+\.\d+/' \
+            | grep -oP '3\.\d+\.\d+' \
+            | sort -Vr \
+            | while read v; do
+                url="https://www.python.org/ftp/python/$v/python-$v-embed-amd64.zip"
+                if curl -sfI "$url" > /dev/null; then
+                  echo $v
+                  break
+                fi
+              done)
+          echo "Valid Python version: $latest"
+          curl -L -o python.zip \
+            https://www.python.org/ftp/python/$latest/python-$latest-embed-amd64.zip
+          unzip -o python.zip
+          rm python.zip
+
+
+
+          
+          
+      - name: Upload Prepared Folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: prepared
+          path: .
+
+      - name: Commit Changes
+        run: |
+          git add LinkDown/*
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto update dependencies ($(date +'%Y.%m.%d'))"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+          
+  Build:
+    needs: Prepare
+    runs-on: windows-latest
+
+    steps:     
+      - name: Download Prepared Folder
+        uses: actions/download-artifact@v4
+        with:
+          name: prepared
+
+      - name: Compile Setup Wizard
+        uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
+        with:
+          path: LinkDown_Wizard.iss
+          options: /O+
+
+      - name: Upload Installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: setup
+          path: Output\linkdown_setup*.exe
 
 
   Upload:
     needs: Build
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@main
 
+    steps:
       - name: Download Release Folder
         uses: actions/download-artifact@v4
         with:
@@ -48,12 +129,12 @@ jobs:
         run: |
           git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
           git config --global user.name github-actions[bot]
-
+          
       - name: Generate Release Tag
         id: tag
         run: |
-          echo "::set-output name=release_version::1.1.1"
-          
+          echo "release_version=$(date +'%Y.%m.%d')" >> $GITHUB_OUTPUT
+
       - name: Upload to Releases
         uses: softprops/action-gh-release@v2
         env:

@@ -1,5 +1,7 @@
 #define MyAppName "LinkDown"
-#define MyAppVersion "1.1.1"
+#ifndef MyAppVersion
+#define MyAppVersion GetDateTimeString('yyyy.mm.dd', '', '')
+#endif
 #define MyAppPublisher "LinkScape"
 
 [Setup]
