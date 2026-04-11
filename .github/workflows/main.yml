@@ -71,10 +71,19 @@ jobs:
           unzip -o python.zip
           rm python.zip
 
-
-
+      - name: Setup 7-Zip
+        uses: milliewalky/setup-7-zip@v2
           
-          
+      - name: Download FFmpeg
+        run: |
+              cd LinkDown
+              curl -L -o ffmpeg.7z https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z
+              7z x ffmpeg.7z
+              folder=$(find . -maxdepth 1 -type d -name "ffmpeg-*essentials_build" | head -n 1)
+              cp "$folder/bin/ffmpeg.exe" .
+              cp "$folder/bin/ffprobe.exe" .
+              rm -rf ffmpeg.7z "$folder"
+           
       - name: Upload Prepared Folder
         uses: actions/upload-artifact@v4
         with:
