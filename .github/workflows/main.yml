@@ -25,7 +25,7 @@ jobs:
           cd LinkDown
           cp nativehost.bat ../nativehost.bat.bak
           cp nativehost.py ../nativehost.py.bak
-          cp chrome.json ../chorme.json.bak
+          cp chrome.json ../chrome.json.bak
           cp firefox.json ../firefox.json.bak
           rm -rf ./*
           mv ../nativehost.bat.bak nativehost.bat
