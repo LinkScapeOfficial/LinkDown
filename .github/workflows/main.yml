@@ -25,11 +25,17 @@ jobs:
           cd LinkDown
           cp nativehost.bat ../nativehost.bat.bak
           cp nativehost.py ../nativehost.py.bak
+          cp chrome.json ../chorme.json.bak
+          cp firefox.json ../firefox.json.bak
           rm -rf ./*
           mv ../nativehost.bat.bak nativehost.bat
           mv ../nativehost.py.bak nativehost.py
+          mv ../chrome.json.bak chrome.json
+          mv ../firefox.json.bak firefox.json
           rm -rf ../nativehost.bat.bak
           rm -rf ../nativehost.py.bak
+          rm -rf ../chrome.json.bak
+          rm -rf ../firefox.json.bak
 
       - name: Download yt-dlp
         run: |
